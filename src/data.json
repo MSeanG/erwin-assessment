@@ -1,0 +1,29 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Headline 1",
+            "text": "Lorem ipsum dolor sit for amet, consectetur null ege adipiscing elit. Morbi in as facilist libero eget congue."
+        },
+        {
+            "id": 2,
+            "title": "Headline 2",
+            "text": "Lorem ipsum dolor sit for amet, consectetur null ege adipiscing elit. Morbi in as facilist libero eget congue."
+        },
+        {
+            "id": 3,
+            "title": "Headline 3",
+            "text": "Lorem ipsum dolor sit for amet, consectetur null ege adipiscing elit. Morbi in as facilist libero eget congue."
+        },
+        {
+            "id": 4,
+            "title": "Headline 4",
+            "text": "Lorem ipsum dolor sit for amet, consectetur null ege adipiscing elit. Morbi in as facilist libero eget congue."
+        },
+        {
+            "id": 5,
+            "title": "Headline 5",
+            "text": "Lorem ipsum dolor sit for amet, consectetur null ege adipiscing elit. Morbi in as facilist libero eget congue."
+        }
+    ]
+}
