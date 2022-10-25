@@ -3,7 +3,8 @@ import "./styles.css";
 import List from "./list.js";
 
 const Index = () => {
-    return List();
+    List.render();
+    List.callback();
 };
 
 export default Index;

@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    background-color: rgba(50, 54, 64, 100);
+    min-height: 100%;
+}
+html,
+body {
+    padding: 0;
+}
+header {
+    color: rgba(248, 195, 48, 100);
+    font-size: 1.75em;
+    padding: 1em 0;
+    text-align: center;
+    width: 1750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+main > ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    perspective: 300px;
+}
+main > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(128, 128, 128, 1);
+    width: 325px;
+    height: 620px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px 8px rgba(50, 50, 50, 0.5);
+    position: absolute;
+    transition: all 0.3s ease-in;
+    /*transition: transform 400ms ease;*/
+}
+.list-item:nth-of-type(3) {
+    z-index: 5;
+    /*order: 3;
+    transition: all 0.3s ease-in;*/
+}
+.list-item:nth-of-type(4) {
+    transform: translateX(80%) scale(0.95);
+    /*order: 4;
+    margin-top: 20px;*/
+}
+.list-item:nth-of-type(5) {
+    transform: translateX(160%) scale(0.94);
+    /*order: 5;
+    margin-top: 20px;*/
+}
+.list-item:nth-of-type(1) {
+    transform: translateX(-160%) scale(0.94);
+    /*order: 1;
+    margin-top: 20px;*/
+}
+.list-item:nth-of-type(2) {
+    transform: translateX(-80%) scale(0.95);
+    /*order: 2;
+    margin-top: 20px;*/
+}
+.list-item:nth-of-type(2),
+.list-item:nth-of-type(4) {
+    z-index: 3;
+}
+.list-item:nth-of-type(1),
+.list-item:nth-of-type(5) {
+    z-index: 1;
+}
+main > ul > li > h2 {
+    text-transform: uppercase;
+    padding-top: 2em;
+}
+main > ul > li > p {
+    line-height: 200%;
+    font-size: 1.25em;
+    margin-top: 0;
+    padding: 0 2em 2em;
+}
+main > ul > li > figure {
+    background-color: rgba(215, 215, 215, 1);
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 50%;
+    height: 192px;
+    width: 192px;
+    margin: 3em auto 0 auto;
+}
+footer {
+    position: relative;
+}
+footer > section {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border: 12px solid rgba(240, 240, 240, 1);
+    position: relative;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: 3em;
+    cursor: pointer;
+}
+footer > section > div {
+    height: 150px;
+    width: 150px;
+}
+footer > section > div:nth-of-type(1) {
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    margin: -84px 0 0 -84px;
+    background-color: rgba(215, 215, 215, 1);
+}
+footer > section > div:nth-of-type(2) {
+    position: absolute;
+    top: 24%;
+    left: 76%;
+    margin: -84px 0 0 -67px;
+    background-color: rgba(255, 255, 255, 1);
+}
+footer > section > div:nth-of-type(3) {
+    position: absolute;
+    top: 76%;
+    left: 24%;
+    margin: -67px 0 0 -84px;
+    background-color: rgba(255, 255, 255, 1);
+}
+footer > section > div:nth-of-type(4) {
+    position: absolute;
+    top: 76%;
+    left: 76%;
+    margin: -67px 0 0 -67px;
+    background-color: rgba(215, 215, 215, 1);
+}
+footer > section > div > i.bi.bi-list-ul {
+    position: absolute;
+    font-size: 2.25em;
+    top: 41%;
+    left: 41%;
+    rotate: -45deg;
+}
+footer > section > div > i.bi.bi-caret-left-fill {
+    position: absolute;
+    font-size: 2.25em;
+    top: 36%;
+    left: 40%;
+    rotate: -45deg;
+}
+footer > section > div > i.bi.bi-caret-right-fill {
+    position: absolute;
+    font-size: 2.25em;
+    top: 40%;
+    left: 36%;
+    rotate: -45deg;
+}
+footer > section > div > i.bi.bi-x-lg {
+    position: absolute;
+    font-size: 2.25em;
+    top: 35%;
+    left: 35%;
+    rotate: 45deg;
+}
+footer > article {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background: linear-gradient(
+        900deg,
+        rgba(248, 195, 48, 1) 0%,
+        rgba(223, 164, 2, 1) 100%
+    );
+    position: absolute;
+    top: 70px;
+    right: 118px;
+    border: 12px solid rgba(240, 240, 240, 1);
+    box-shadow: 0 0 0 6px rgb(238, 182, 29, 1) inset;
+    cursor: pointer;
+}
+footer > article > i.bi.bi-check-lg {
+    position: absolute;
+    font-size: 5em;
+    top: 25px;
+    right: 30px;
+}
