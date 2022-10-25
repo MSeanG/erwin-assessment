@@ -23,6 +23,12 @@ const List = {
             if (event.target.classList.contains("close")) {
                 alert("close selected");
             }
+            if (event.target.classList.contains("sleep")) {
+                alert("sleep selected");
+            }
+            if (event.target.classList.contains("home")) {
+                alert("home selected");
+            }
             return;
         });
     },
